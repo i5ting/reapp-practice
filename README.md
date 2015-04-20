@@ -111,3 +111,70 @@ Time: 3443ms
 
 ```
 
+代码结构
+
+```
+➜  helloworld git:(master) ✗ tree . -L 2
+.
+├── README.md
+├── app(核心代码区)
+│   ├── app.js
+│   ├── components
+│   └── theme
+├── assets（资源文件区）
+│   ├── ios
+│   ├── shared
+│   └── web
+├── build（生成最终给cordova打包的www里的文件区）
+│   └── web
+├── node_modules（依赖模块）
+│   ├── react
+│   └── reapp-kit
+├── package.json （npm包文件）
+└── server_modules （服务器依赖模块）
+    ├── autoprefixer-core -> /usr/local/lib/node_modules/reapp/node_modules/reapp-pack/lib/../node_modules/autoprefixer-core
+    ├── autoprefixer-loader -> /usr/local/lib/node_modules/reapp/node_modules/reapp-pack/lib/../node_modules/autoprefixer-loader
+    ├── babel -> /usr/local/lib/node_modules/reapp/node_modules/reapp-pack/lib/../node_modules/babel
+    ├── babel-loader -> /usr/local/lib/node_modules/reapp/node_modules/reapp-pack/lib/../node_modules/babel-loader
+    ├── babel-runtime -> /usr/local/lib/node_modules/reapp/node_modules/reapp-pack/lib/../node_modules/babel-runtime
+    ├── bundle-loader -> /usr/local/lib/node_modules/reapp/node_modules/reapp-pack/lib/../node_modules/bundle-loader
+    ├── css-loader -> /usr/local/lib/node_modules/reapp/node_modules/reapp-pack/lib/../node_modules/css-loader
+    ├── exports-loader -> /usr/local/lib/node_modules/reapp/node_modules/reapp-pack/lib/../node_modules/exports-loader
+    ├── extract-text-webpack-plugin -> /usr/local/lib/node_modules/reapp/node_modules/reapp-pack/lib/../node_modules/extract-text-webpack-plugin
+    ├── file-loader -> /usr/local/lib/node_modules/reapp/node_modules/reapp-pack/lib/../node_modules/file-loader
+    ├── html-loader -> /usr/local/lib/node_modules/reapp/node_modules/reapp-pack/lib/../node_modules/html-loader
+    ├── imports-loader -> /usr/local/lib/node_modules/reapp/node_modules/reapp-pack/lib/../node_modules/imports-loader
+    ├── json-loader -> /usr/local/lib/node_modules/reapp/node_modules/reapp-pack/lib/../node_modules/json-loader
+    ├── null-loader -> /usr/local/lib/node_modules/reapp/node_modules/reapp-pack/lib/../node_modules/null-loader
+    ├── postcss-loader -> /usr/local/lib/node_modules/reapp/node_modules/reapp-pack/lib/../node_modules/postcss-loader
+    ├── prepend-file -> /usr/local/lib/node_modules/reapp/node_modules/reapp-pack/lib/../node_modules/prepend-file
+    ├── raw-loader -> /usr/local/lib/node_modules/reapp/node_modules/reapp-pack/lib/../node_modules/raw-loader
+    ├── react-hot-loader -> /usr/local/lib/node_modules/reapp/node_modules/reapp-pack/lib/../node_modules/react-hot-loader
+    ├── react-proxy-loader -> /usr/local/lib/node_modules/reapp/node_modules/reapp-pack/lib/../node_modules/react-proxy-loader
+    ├── sax -> /usr/local/lib/node_modules/reapp/node_modules/reapp-pack/lib/../node_modules/sax
+    ├── style-loader -> /usr/local/lib/node_modules/reapp/node_modules/reapp-pack/lib/../node_modules/style-loader
+    ├── stylus -> /usr/local/lib/node_modules/reapp/node_modules/reapp-pack/lib/../node_modules/stylus
+    ├── stylus-loader -> /usr/local/lib/node_modules/reapp/node_modules/reapp-pack/lib/../node_modules/stylus-loader
+    ├── transform-loader -> /usr/local/lib/node_modules/reapp/node_modules/reapp-pack/lib/../node_modules/transform-loader
+    ├── url-loader -> /usr/local/lib/node_modules/reapp/node_modules/reapp-pack/lib/../node_modules/url-loader
+    ├── webpack -> /usr/local/lib/node_modules/reapp/node_modules/reapp-pack/lib/../node_modules/webpack
+    ├── webpack-dev-server -> /usr/local/lib/node_modules/reapp/node_modules/reapp-pack/lib/../node_modules/webpack-dev-server
+    └── worker-loader -> /usr/local/lib/node_modules/reapp/node_modules/reapp-pack/lib/../node_modules/worker-loader
+
+41 directories, 3 files
+```
+
+简单说明
+
+- app(核心代码区)
+- assets（资源文件区）
+- build（生成最终给cordova打包的www里的文件区）
+- node_modules（依赖模块）
+- package.json （npm包文件）
+- server_modules （服务器依赖模块）
+
+
+![](doc/1.png)
+
+![](doc/2.png)
+
